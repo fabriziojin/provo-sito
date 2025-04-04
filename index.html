@@ -1,0 +1,45 @@
+
+<!doctype html>
+<html lang="it">
+     <head>
+      <script>
+       alert("buongiorno!");
+       function primaFunzione()
+       {
+         document.getElementById("link1").innerHTML ="ho cambiato il testo!"
+       }
+      </script>
+      <title>La pagina del prof</title>
+      <style>
+         body {
+background: white;
+color: rgb(240, 10, 10);
+}
+/* Stili per i titoli h1 */
+h1 {
+color: red;
+font: 36px Helvetica, Arial, sans-serif;
+}
+/* Colore del testo delle liste */
+li {color: green;}
+/* Colore dei titoli h1 per la stampa */
+@media print {
+h1 {color: black;}
+}
+      </style>
+   </head>
+    <body>
+     <h1 onclick='alert("ciao!")'>Ciao 1D!</h1>
+     <p>il p è un elemento block</p>
+     <p>invece 'a' è un elemento inline
+      A me mi piace la banananana
+        <a id="link1" href=https://www.google.com>clicca qui per cercare su google
+              </a>
+                 </p>
+             <input title=" indirizzo email"type="email" name="email"
+              placeholder="Scrivi il tuo indirizzo email..."> 
+              <input type="button" onclick="primaFunzione()"value="cliccami"/>
+     </body>
+</html>
+
+
